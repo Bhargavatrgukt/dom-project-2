@@ -25,7 +25,7 @@ function updateUI() {
 
 function moveSelectedItems(sourceContainer, targetContainer) {
   Array.from(sourceContainer.querySelectorAll("input:checked")).forEach((input) => {
-    const parentLi = input.closest("li");
+    const parentLi = input.parentElement;
     targetContainer.appendChild(parentLi);
     input.checked = false;
   });

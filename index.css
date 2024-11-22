@@ -63,6 +63,3 @@ button{
   flex: 1;
 }
 
-#one-left,#one-right{
-    cursor: not-allowed;
-}
