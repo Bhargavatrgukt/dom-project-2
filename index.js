@@ -7,6 +7,7 @@ let oneLeftSymbol = document.getElementById("one-left");
 let container1 = document.querySelector(".container1 ul");
 let container2 = document.querySelector(".container2 ul");
 
+let section=document.getElementById("section")
 
 function updateUI() {
 
@@ -47,9 +48,9 @@ allRightSymbol.addEventListener("click", () => moveAllItems(container1, containe
 allLeftSymbol.addEventListener("click", () => moveAllItems(container2, container1));
 
 
-[container1, container2].forEach((container) => {
-  container.addEventListener("change", updateUI);
-});
+
+
+section.addEventListener("change",updateUI)
 
 
 updateUI();
